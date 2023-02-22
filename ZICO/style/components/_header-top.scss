@@ -1,0 +1,84 @@
+.header {
+    width: 100%;
+
+    &-top {
+        @include flexbetween;
+        padding: 36px 0 25px;
+
+        &_logo {
+            font-size: 20px;
+            line-height: 24px;
+            color: $black;
+            font-weight: 700;
+        }
+
+        &__menu {
+            @include flexaligncenter;
+            gap: 30px;
+
+            &-links {
+                font-size: 16px;
+                line-height: 19px;
+                color: $black;
+                transition: 0.5s;
+
+                &:hover {
+                    color: $violet;
+                }
+            }
+
+            @include media(768) {
+                display: none;
+            }
+        }
+
+        @include media(768) {
+            padding: 18px 0 12px;
+        }
+    }
+
+    .burger-menu {
+        @include flexbetween;
+        flex-direction: column;
+        gap: 5px;
+        display: none;
+
+        @include media(768) {
+            display: flex;
+        }
+
+        &>div {
+            width: 35px;
+            height: 4px;
+            background-color: $black;
+            border-radius: 70px;
+        }
+    }
+
+    .search-form {
+        width: 97px;
+        height: 24px;
+        @include flexbetween;
+        gap: 11px;
+    
+        &__label {
+            display: block;
+    
+            &-icon {
+                display: block;
+            }
+        }
+    
+        &__input {
+            border: none;
+    
+            &:focus {
+                outline: none;
+            }
+        }
+
+        @include media(768) {
+            display: none;
+        }
+    }
+}

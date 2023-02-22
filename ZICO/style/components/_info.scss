@@ -1,0 +1,108 @@
+.info {
+    background-color: #F7FAFC;
+    margin-bottom: 31px;
+    display: flex;
+    justify-content: space-between;
+
+    @include media(992) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-width: 525px;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 21px;
+    }
+
+    &-texts {
+        padding: 98px 0 118px 63px;
+
+        @include media(992) {
+            padding: 29px 20px 59px 20px;
+        }
+
+        &_title {
+            max-width: 308px;
+            width: 100%;
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 48px;
+            color: $black;
+
+            @include media(576) {
+                font-size: 20px;
+                line-height: 28px;
+                text-align: center;
+            }
+        }
+
+        &_text {
+            max-width: 311px;
+            width: 100%;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $text;
+            margin-block: 24px 31px;
+
+            @include media(576) {
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+            }
+        }
+
+        &_bottom {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        &_data {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+            color: $text;
+
+            @include media(576) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+
+        &_link {
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 19px;
+            color: $black;
+
+            @include media(576) {
+                font-size: 12px;
+                line-height: 14px;
+            }
+        }
+    }
+
+    &-img {
+        max-width: 525px;
+        width: 100%;
+    }
+}
+
+.button {
+    padding: 9px 11px;
+    border-radius: 5px;
+    background-color: $violet;
+    display: flex;
+    align-items: center;
+    border-style: none;
+    gap: 9px;
+    margin-bottom: 43px;
+    color: #ffff;
+    margin-left: auto;
+
+    @include media(992) {
+        margin: auto;
+        margin-bottom: 23px;
+    }
+}

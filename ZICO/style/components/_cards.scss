@@ -1,0 +1,64 @@
+.cards {
+    display: flex;
+    gap: 33px;
+    margin-bottom: 43px;
+
+    @include media(992) {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+        margin-bottom: 23px;
+    }
+
+    &-card {
+        display: flex;
+        flex-direction: column;
+        box-shadow: 0px 4px 4px rgba(192, 189, 189, 0.25);
+        border-radius: 5px;
+
+        &_img {
+            max-width: 297px;
+            width: 100%;
+        }
+
+        &_texts {
+            padding: 18px 24px 24px 16px;
+
+            &__title {
+                font-weight: 700;
+                font-size: 20px;
+                line-height: 24px;
+                color: $title;
+            }
+
+            &__text {
+                width: 258px;
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 17px;
+                color: $text;
+                margin-block: 15px 22px;
+            }
+
+            &__bottom {
+                display: flex;
+                justify-content: space-between;
+            }
+
+            &__data {
+                font-weight: 400;
+                font-size: 12px;
+                line-height: 15px;
+                color: $text;
+            }
+
+            &__link {
+                font-weight: 700;
+                font-size: 12px;
+                line-height: 15px;
+                color: $title;
+            }
+        }
+    }
+}

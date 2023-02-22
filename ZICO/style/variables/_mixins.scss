@@ -1,0 +1,17 @@
+@mixin text {
+    color: $text;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+@mixin flexbetween {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin flexaligncenter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,63 @@
+.header-banner {
+    padding-block: 70px 74px;
+    background-color: #FBFBFB;
+    display: flex;
+
+    @include media(860) {
+        padding-block: 35px 37px;
+    }
+
+    &__content {
+        max-width: 476px;
+        width: 100%;
+
+        @include media(860) {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        &-title {
+            font-weight: 700;
+            font-size: 60px;
+            line-height: 73px;
+            color: $black;
+            max-width: 354px;
+            width: 100%;
+
+            @include media(860) {
+                text-align: center;
+                font-size: 30px;
+                line-height: 40px;
+                max-width: 476px;
+                width: 100%;
+            }
+        }
+
+        &-text {
+            font-weight: 400;
+            font-size: 30px;
+            line-height: 36px;
+            margin-top: 19px;
+
+            @include media(860) {
+                text-align: center;
+                font-size: 15px;
+                line-height: 18px;
+                margin-top: 10px;
+            }
+        }
+
+        &-img {
+            max-width: 476px;
+            width: 100%;
+        }
+    }
+
+    &_row {
+        @include media(860) {
+            flex-direction: column-reverse;
+            gap: 20px;
+        }
+    }
+}
