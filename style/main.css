@@ -8,6 +8,7 @@
 
 body {
   background-color: #282828;
+  z-index: -3;
 }
 
 .container {
@@ -132,7 +133,7 @@ body {
 
 
 .mobile-menu {
-  margin: 200px auto;
+  /* margin: 130px auto 0 auto; */
   width: 300px;
   height: 310px;
   box-shadow: 0px 4px 20px rgba(255, 255, 255, 0.25);
@@ -142,6 +143,9 @@ body {
   padding: 20px;
   transform: translateY(-630px);
   transition: 0.3s;
+  position: absolute;
+  left: 30%;
+  top: 200px;
 }
 
 .mobile-menu.open {
